@@ -12,6 +12,10 @@ This file indexes the current cells under `workspace/` so agents can route quick
 - **Purpose:** active business-development / opportunity cell for Dominic Oettl and RevvTech
 - **Use for:** email context, opportunity assessment, reply drafting, commercial framing, follow-up, relationship mapping
 
+### `lewkai`
+- **Purpose:** Lewkai business strategy and execution cell
+- **Use for:** GEO / Agentic SEO, business positioning, implementation roadmap, and execution planning
+
 ## Routing rule
 
 When asked about:

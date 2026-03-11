@@ -6,6 +6,7 @@ These are the cells currently most relevant for immediate work.
 
 - `ldp-work-profile` — professional identity, capability, positioning, rate context
 - `revvtech-dominic` — current active opportunity / reply / follow-up context
+- `lewkai` — current business strategy and GEO / Agentic SEO context
 
 ## Rule
 
