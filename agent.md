@@ -1,0 +1,123 @@
+# _agent Canonical Workspace Map
+
+This directory is the canonical agent workspace for user `ldp`.
+
+Primary path:
+- `/home/ldp/_agent`
+
+Portable pattern for future users/test scenarios:
+- `<user-home>/_agent`
+- e.g. `/home/test/_agent`
+
+## Purpose
+
+This workspace is the user-global control plane for agentic work on this machine.
+It exists to keep agent behavior, memory, routing, outputs, review, and refinement tidy, reusable, and portable.
+
+See also:
+- `BLUEPRINT.md` — canonical architectural blueprint and evaluation basis
+
+## Non-negotiables
+
+1. Read this file first for `_agent` work.
+2. Prefer the simplest viable structure.
+3. Define success before building.
+4. Capture reusable decisions, not just outputs.
+5. Encode expert taste and rejections as compounding assets.
+6. Avoid premature automation and agent proliferation.
+7. Design so the structure can later be reused in `/home/test/_agent` without copying personal identity blindly.
+
+## The Six Pillars
+
+1. **Critical Thinking & Decision Science** — Make bias-aware decisions, state assumptions, and compare alternatives.
+2. **First Principles Thinking** — Decompose to fundamentals before building.
+3. **KISS (Radical Simplicity)** — Prefer the simplest viable approach.
+4. **Incremental Innovation & Compounding** — Improve in small durable steps.
+5. **Test-Driven Development** — Define success and verification before implementation.
+6. **The Optimization Engine** — Build reusable internal tooling, shared templates, and a leverage platform.
+
+## Naming vocabulary
+
+- **root** — the canonical `_agent` workspace for a user, e.g. `/home/ldp/_agent`
+- **room** — a domain context under `rooms/` that contains local instructions and standards
+- **cell** — a bounded local work context for a client, project, relationship, or initiative, typically stored under `workspace/`
+- **memory core** — the four core memory files: `soul.md`, `user.md`, `telos.md`, `context.md`
+- **taste subsystem** — the recognition → articulation → encoding → reuse loop under `taste/`
+
+## Top-level map
+
+- `memory/` — persistent markdown memory core
+- `rooms/` — task-context rooms with local instructions
+- `workspace/` — actual outputs and execution artifacts
+- `taste/` — rejection capture, taste rules, rubrics, and compounding feedback loop
+- `templates/` — reusable templates for rooms, reviews, and agent specs
+- `agents/` — agent role specs (steward, critic, etc.)
+- `review/` — periodic review notes
+- `migration/` — migration inventory and staging docs
+- `inbox/` — unclassified items waiting to be routed
+- `archive/` — retained but inactive material
+- `ROADMAP.md` — phased implementation plan
+- `REVIEW.md` — current status and hygiene checklist
+- `MIGRATION.md` — migration plan from existing chaos into this canonical workspace
+
+## Memory core
+
+Core memory files live in `memory/`:
+- `soul.md`
+- `user.md`
+- `telos.md`
+- `context.md`
+
+Use them as follows:
+- `soul.md` — philosophy, identity, non-negotiables
+- `user.md` — user preferences and constraints
+- `telos.md` — strategic direction and long-term goals
+- `context.md` — active context, open loops, near-term state
+
+## Routing rules
+
+1. Start here.
+2. Determine which room applies.
+3. Load only the relevant room context and needed references.
+4. Save outputs in `workspace/` using naming conventions.
+5. If a correction reveals a reusable standard, encode it in `taste/`.
+6. If a rule becomes durable, promote it into `memory/`, room context, or templates.
+
+## Naming convention
+
+Default file pattern:
+
+`[topic]__[type]__[status]__v[version].md`
+
+Examples:
+- `agent-system__plan__active__v1.md`
+- `taste-capture__rubric__draft__v1.md`
+- `workspace-steward__spec__review__v2.md`
+
+Suggested statuses:
+- `draft`
+- `active`
+- `review`
+- `approved`
+- `archived`
+
+## Taste capture rule
+
+Treat expert rejection as a compounding asset.
+
+When output is rejected:
+1. Recognize the failure
+2. Articulate why it failed
+3. Encode the lesson in `taste/`
+4. Reuse it on the next similar task
+
+## Safety rules
+
+- Do not store secrets in workspace files.
+- Prefer explicit paths and predictable conventions over hidden behavior.
+- Before destructive changes, verify intent.
+- Do not add more agents or automation until the manual workflow is stable and reviewed.
+
+## Portability rule
+
+Keep the structure reusable across users. Personal identity and preferences belong in the memory files, not the folder schema.
