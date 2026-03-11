@@ -4,6 +4,14 @@ This file lists preferred tools, platforms, and infrastructure patterns that age
 
 ## Current preferences
 
+### Moeba
+- **Admin UI:** `https://admin.moeba.co.za/`
+- **Type:** agent interaction platform / UI layer
+- **Why it matters:** provides a structured user-facing interface for agents, including chat-style interaction, workflows, OAuth connect flows, secret input, progress updates, and agent-initiated messaging
+- **When to consider it:** when building agents that need a usable front-end/UI layer for end users rather than only backend orchestration; especially useful where mobile/chat interaction, workflow capture, and controlled agent UX matter
+- **Implementation note:** treat Moeba as a delivery/interface layer that can sit in front of custom agent systems and business workflows
+- **Reference spec:** `workspace/ldp-work-profile/source-moeba__spec__active__v1.md`
+
 ### SpacetimeDB
 - **Website:** `https://spacetimedb.com/`
 - **Type:** multiplayer / realtime application database and server platform
@@ -31,3 +39,7 @@ For workflow/system replacement projects, compare:
 - Airtable
 - custom build on Neon/Supabase
 - custom build using SpacetimeDB where realtime/event-driven architecture is useful
+
+For agent delivery projects, also consider:
+- whether a dedicated UX/delivery layer like **Moeba** should be part of the stack
+- whether the project needs workflow capture, OAuth connection flows, secret capture, proactive agent messaging, or mobile-first agent interaction

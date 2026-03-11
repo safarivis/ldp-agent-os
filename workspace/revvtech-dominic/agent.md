@@ -7,11 +7,15 @@ This cell is the bounded work context for the relationship/opportunity with Domi
 ## Read order
 
 1. `context.md`
-2. `opportunities.md`
-3. `decisions.md`
-4. `email-log.md`
-5. `reply-drafts.md`
-6. `notes.md`
+2. `email-log.md`
+3. `project-notes.md`
+4. `opportunities.md`
+5. `engagement-model.md`
+6. `contacts.md`
+7. `next-steps.md`
+8. `reply-drafts.md`
+9. `decisions.md`
+10. `notes.md`
 
 ## What this cell is for
 

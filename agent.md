@@ -50,6 +50,7 @@ See also:
 - `rooms/` — task-context rooms with local instructions
 - `workspace/` — actual outputs and execution artifacts
 - `taste/` — rejection capture, taste rules, rubrics, and compounding feedback loop
+- `knowledge/` — durable processed knowledge distilled from NotebookLM and other sources
 - `templates/` — reusable templates for rooms, reviews, and agent specs
 - `agents/` — agent role specs (steward, critic, etc.)
 - `review/` — periodic review notes
@@ -77,15 +78,41 @@ Use them as follows:
 ## Routing rules
 
 1. Start here.
-2. Determine which room applies.
-3. Load only the relevant room context and needed references.
-4. Save outputs in `workspace/` using naming conventions.
-5. If a correction reveals a reusable standard, encode it in `taste/`.
-6. If a rule becomes durable, promote it into `memory/`, room context, or templates.
+2. If the user asks about business opportunities, clients, pricing, replies, or current work context, check `workspace/INDEX.md` and `workspace/ACTIVE-CELLS.md` first.
+3. Determine which room or cell applies.
+4. Load only the relevant room context and needed references.
+5. Save outputs in `workspace/` using naming conventions.
+6. If a correction reveals a reusable standard, encode it in `taste/`.
+7. If a rule becomes durable, promote it into `memory/`, room context, or templates.
+
+## Contact placement rule
+
+When saving contact information:
+- Put **durable user-level contacts, partner leads, and cross-opportunity relationships** in the appropriate broad profile cell (for `ldp`, this is `workspace/ldp-work-profile/contacts.md`).
+- Put **client- or opportunity-specific contacts** in that specific cell's `contacts.md`.
+- If a contact could matter across multiple opportunities, default to the broader profile cell rather than a single client cell.
+- Only duplicate a contact into a client cell when the relationship becomes materially specific to that client context.
 
 ## Naming convention
 
-Default file pattern:
+### Classification rule
+
+To keep naming simple and reduce confusion:
+- **tool / platform** = a thing we use in solution design or delivery (e.g. Moeba, Supabase, Neon)
+- **project** = a concrete codebase or runnable implementation we build and operate (e.g. `moeba-bridge`)
+- **cell** = a bounded context used to track thinking, relationships, opportunities, or work state in `_agent/workspace/`
+
+Decision rule:
+- if it is a **thing we use**, classify it as a **tool/platform**
+- if it is a **thing we build/run**, classify it as a **project**
+- if it is a **thing we track/think through**, classify it as a **cell**
+
+Naming rule:
+- tool/platform names use the normal product name
+- project/codebase names use **lowercase kebab-case**
+- cell/context names use **context-oriented kebab-case**
+
+Default file pattern for markdown workspace files:
 
 `[topic]__[type]__[status]__v[version].md`
 
