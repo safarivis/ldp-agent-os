@@ -125,12 +125,13 @@ Validation:
    - `knowledge/workflows/thinking-review-checklist__workflow__approved__v1.md`
 9. If the task is about backing up `_agent` to GitHub, use:
    - `knowledge/workflows/github-backup__workflow__approved__v1.md`
-10. Determine which room or cell applies.
-11. Load only the relevant room context and needed references.
-12. Save outputs in `workspace/` using naming conventions.
-13. If a correction reveals a reusable standard, encode it in `taste/`.
-14. Promote to principles only after repeated validation or clearly general evidence; otherwise keep the lesson at the live, template, or workflow level.
-15. If a rule becomes durable, promote it into `memory/`, room context, or templates.
+10. Decide scope before answering: root-wide, memory-level, profile-cell, or workstream/cell-specific.
+11. Determine which room or cell applies.
+12. Load only the relevant room context and needed references.
+13. Save outputs in `workspace/` using naming conventions.
+14. If a correction reveals a reusable standard, encode it in `taste/`.
+15. Promote to principles only after repeated validation or clearly general evidence; otherwise keep the lesson at the live, template, or workflow level.
+16. If a rule becomes durable, promote it into `memory/`, room context, or templates.
 
 ## Contact placement rule
 
