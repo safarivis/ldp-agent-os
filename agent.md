@@ -126,12 +126,13 @@ Validation:
 9. If the task is about backing up `_agent` to GitHub, use:
    - `knowledge/workflows/github-backup__workflow__approved__v1.md`
 10. Decide scope before answering: root-wide, memory-level, profile-cell, or workstream/cell-specific.
-11. Determine which room or cell applies.
-12. Load only the relevant room context and needed references.
-13. Save outputs in `workspace/` using naming conventions.
-14. If a correction reveals a reusable standard, encode it in `taste/`.
-15. Promote to principles only after repeated validation or clearly general evidence; otherwise keep the lesson at the live, template, or workflow level.
-16. If a rule becomes durable, promote it into `memory/`, room context, or templates.
+11. For mixed-context questions, answer in the governing scope first, then note broader implications separately only if they materially affect the recommendation.
+12. Determine which room or cell applies.
+13. Load only the relevant room context and needed references.
+14. Save outputs in `workspace/` using naming conventions.
+15. If a correction reveals a reusable standard, encode it in `taste/`.
+16. Promote to principles only after repeated validation or clearly general evidence; otherwise keep the lesson at the live, template, or workflow level.
+17. If a rule becomes durable, promote it into `memory/`, room context, or templates.
 
 ## Contact placement rule
 
