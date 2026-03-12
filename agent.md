@@ -117,16 +117,17 @@ Validation:
 2. If the user asks about business opportunities, clients, pricing, replies, or current work context, check `workspace/INDEX.md` and `workspace/ACTIVE-CELLS.md` first.
 3. For business/work-context questions, do not answer from generic prior knowledge before checking the relevant `_agent` workspace context.
 4. For prioritization, sequencing, or "what should we do next?" questions, consult `memory/context.md` and `memory/telos.md` before giving recommendations.
-5. If the task is strategic, ambiguous, high-stakes, architecture-shaping, or commercially important, apply:
+5. When global guidance and active cell/workspace context conflict, prefer the more local and more current source, and note the conflict briefly if it affects the recommendation.
+6. If the task is strategic, ambiguous, high-stakes, architecture-shaping, or commercially important, apply:
    - `knowledge/workflows/meta-model-thinking__workflow__approved__v1.md`
    - `knowledge/workflows/thinking-review-checklist__workflow__approved__v1.md`
-5. If the task is about backing up `_agent` to GitHub, use:
+7. If the task is about backing up `_agent` to GitHub, use:
    - `knowledge/workflows/github-backup__workflow__approved__v1.md`
-6. Determine which room or cell applies.
-7. Load only the relevant room context and needed references.
-8. Save outputs in `workspace/` using naming conventions.
-9. If a correction reveals a reusable standard, encode it in `taste/`.
-10. If a rule becomes durable, promote it into `memory/`, room context, or templates.
+8. Determine which room or cell applies.
+9. Load only the relevant room context and needed references.
+10. Save outputs in `workspace/` using naming conventions.
+11. If a correction reveals a reusable standard, encode it in `taste/`.
+12. If a rule becomes durable, promote it into `memory/`, room context, or templates.
 
 ## Contact placement rule
 
