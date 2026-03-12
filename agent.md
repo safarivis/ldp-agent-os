@@ -106,6 +106,8 @@ Scaffold helper:
 
 Validation:
 - run `tests/validate-canonical-layout.sh` to verify the canonical layout, templates, and example cells
+- run `tests/sync-managed-sections.sh` to propagate shared managed cell-routing blocks into existing cell files
+- run `tests/validate-managed-sections.sh` to confirm the managed blocks are present and balanced
 - run `tests/weekly-check.sh` for the normal weekly wrapper: validator + workspace hygiene + root hygiene
 - run `tests/weekly-check-and-log.sh` for the weekly review flow with a saved report under `review/weekly-checks/`, automatic retention of the latest 12 reports, and an updated `review/weekly-checks/INDEX.md`; report filenames are marked `pass` or `fail`
 

@@ -58,6 +58,7 @@ When updating an existing cell:
 ## Validation rule
 
 After editing managed sections:
+- run `tests/sync-managed-sections.sh` to propagate the shared block from the template into existing files
 - run `tests/validate-managed-sections.sh`
 - inspect the changed file(s)
 - commit only the intended block updates

@@ -15,6 +15,7 @@ Track where winning lessons have been applied.
 ### Applied to existing derived files
 - `/home/ldp/_agent/workspace/revvtech-dominic/agent.md` via managed section
 - `/home/ldp/_agent/workspace/ldp-work-profile/agent.md` via managed section
+- sync command: `/home/ldp/_agent/tests/sync-managed-sections.sh`
 
 ### Eval evidence
 - `/home/ldp/projects/agent-evals/logs/exp-001.md`
