@@ -24,6 +24,7 @@ Use this cell to:
 <!-- managed: cell-routing:start -->
 For work-context questions inside this cell, check `context.md` and any relevant local cell files before answering from generic prior knowledge.
 If local/current cell context conflicts with broader/global guidance, prefer the more local and more current source and note the conflict briefly if it affects the recommendation.
+If this cell has an explicit local rule that is relevant and does not violate a root non-negotiable, respect the local rule instead of forcing the default root pattern.
 <!-- managed: cell-routing:end -->
 
 ## Scope rule
