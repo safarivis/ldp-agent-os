@@ -20,6 +20,24 @@ Track where winning lessons have been applied.
 ### Eval evidence
 - `/home/ldp/projects/agent-evals/logs/exp-001.md`
 
+## Lesson 006 — explicit local-over-global conflict handling
+
+**Lesson:** when source conflict matters, explicit local-and-current-over-global guidance outperforms implied hierarchy.
+
+### Applied live
+- `/home/ldp/_agent/agent.md`
+
+### Applied to template
+- `/home/ldp/_agent/templates/cell/agent.md`
+
+### Applied to existing derived files
+- `/home/ldp/_agent/workspace/revvtech-dominic/agent.md` via managed section
+- `/home/ldp/_agent/workspace/ldp-work-profile/agent.md` via managed section
+- sync command: `/home/ldp/_agent/tests/sync-managed-sections.sh`
+
+### Eval evidence
+- `/home/ldp/projects/agent-evals/logs/exp-006.md`
+
 ## Lesson 002 — explicit prioritization routing
 
 **Lesson:** prioritization works better when recommendations consult `memory/context.md` and `memory/telos.md`.

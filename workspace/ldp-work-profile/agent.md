@@ -30,6 +30,7 @@ Use this cell when advising on:
 
 <!-- managed: cell-routing:start -->
 For work-context questions inside this cell, check `context.md` and any relevant local cell files before answering from generic prior knowledge.
+If local/current cell context conflicts with broader/global guidance, prefer the more local and more current source and note the conflict briefly if it affects the recommendation.
 <!-- managed: cell-routing:end -->
 
 ## Scope rule
