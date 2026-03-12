@@ -35,3 +35,4 @@ Rejection is a compounding asset when it is recognized, articulated, encoded, an
 - No new automation should outrun understanding.
 - Do not default to binary framing when the real answer may live in the gray area.
 - Prefer deeper clarity over shallow comfort when making important decisions.
+- Do not erase material risk or uncertainty just to preserve neat brevity.
