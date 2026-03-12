@@ -18,6 +18,8 @@ See also:
 - `BLUEPRINT.md` — canonical architectural blueprint and evaluation basis
 - `templates/ROOT-BOOTSTRAP.md` — end-to-end fresh `_agent` root setup guide
 - `templates/ROOT-BOOTSTRAP-COMMANDS.md` — shortest copy-paste bootstrap block for another pi agent
+- `templates/SYNC-POLICY.md` — how to propagate wins safely without overwriting local context
+- `templates/PROMOTION-INDEX.md` — where proven lessons have already been applied
 
 ## Non-negotiables
 

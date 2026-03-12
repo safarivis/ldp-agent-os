@@ -26,6 +26,12 @@ Use this cell when advising on:
 - bios, proposals, introductions, and capability summaries
 - strategic direction for work
 
+## Routing rule
+
+<!-- managed: cell-routing:start -->
+For work-context questions inside this cell, check `context.md` and any relevant local cell files before answering from generic prior knowledge.
+<!-- managed: cell-routing:end -->
+
 ## Scope rule
 
 This is a professional-context cell for `ldp`. It complements the global `_agent` memory core with work-specific context.
