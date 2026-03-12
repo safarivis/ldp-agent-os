@@ -129,7 +129,8 @@ Validation:
 11. Load only the relevant room context and needed references.
 12. Save outputs in `workspace/` using naming conventions.
 13. If a correction reveals a reusable standard, encode it in `taste/`.
-14. If a rule becomes durable, promote it into `memory/`, room context, or templates.
+14. Promote to principles only after repeated validation or clearly general evidence; otherwise keep the lesson at the live, template, or workflow level.
+15. If a rule becomes durable, promote it into `memory/`, room context, or templates.
 
 ## Contact placement rule
 
