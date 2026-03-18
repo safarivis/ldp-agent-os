@@ -31,4 +31,5 @@ Keep `soul.md` mostly stable unless the identity/philosophy truly differs.
 ## See also
 
 - `templates/ROOT-BOOTSTRAP.md`
+- `templates/org-starter-kit/README.md`
 - `templates/memory/ROOT-SETUP.md`

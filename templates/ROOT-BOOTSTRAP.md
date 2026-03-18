@@ -92,6 +92,7 @@ When eval experiments produce a winning improvement:
 ## See also
 
 - `templates/ROOT-BOOTSTRAP-COMMANDS.md` — shortest copy-paste bootstrap block for another pi agent
+- `templates/org-starter-kit/README.md` — ready package for setting up new orgs and projects
 - `templates/memory/ROOT-SETUP.md`
 - `templates/memory/README.md`
 - `templates/cell/README.md`
