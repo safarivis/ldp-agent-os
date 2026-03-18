@@ -1,35 +1,53 @@
 # Fresh `_agent` Root Bootstrap Commands
 
-Use this when another pi agent just needs the shortest copy-paste setup.
+Use this when you want the **actual setup commands from this repo**, not references to some other local machine.
 
-## Copy-paste block
+## Option 1 — fastest: run the included script
 
+### macOS / Linux
 ```bash
-USER_HOME="/home/test"
-mkdir -p "$USER_HOME/_agent"/{memory,templates/cell,templates/memory,workspace,taste,knowledge}
-cp /home/ldp/_agent/agent.md "$USER_HOME/_agent/agent.md"
-cp /home/ldp/_agent/templates/memory/soul.md "$USER_HOME/_agent/memory/soul.md"
-cp /home/ldp/_agent/templates/memory/user.md "$USER_HOME/_agent/memory/user.md"
-cp /home/ldp/_agent/templates/memory/context.md "$USER_HOME/_agent/memory/context.md"
-cp /home/ldp/_agent/templates/memory/telos.md "$USER_HOME/_agent/memory/telos.md"
-cp /home/ldp/_agent/templates/cell/agent.md "$USER_HOME/_agent/templates/cell/agent.md"
-cp /home/ldp/_agent/templates/cell/context.md "$USER_HOME/_agent/templates/cell/context.md"
-cp /home/ldp/_agent/templates/cell/notes.md "$USER_HOME/_agent/templates/cell/notes.md"
-cp /home/ldp/_agent/templates/cell/create-cell.sh "$USER_HOME/_agent/templates/cell/create-cell.sh"
-chmod +x "$USER_HOME/_agent/templates/cell/create-cell.sh"
+bash templates/org-starter-kit/bootstrap-agent-os.sh ./_agent
+```
+
+### Windows PowerShell
+```powershell
+powershell -ExecutionPolicy Bypass -File .\templates\org-starter-kit\bootstrap-agent-os.ps1 -Target .\_agent
+```
+
+## Option 2 — copy the included scaffold from this repo
+
+### macOS / Linux
+```bash
+TARGET="./_agent"
+mkdir -p "$TARGET"
+cp -R templates/org-starter-kit/scaffold/_agent/. "$TARGET/"
+```
+
+### Windows PowerShell
+```powershell
+$Target = ".\_agent"
+New-Item -ItemType Directory -Force -Path $Target | Out-Null
+Copy-Item -Recurse -Force .\templates\org-starter-kit\scaffold\_agent\* $Target
 ```
 
 ## Then adapt
 
 Edit these first:
-- `$USER_HOME/_agent/memory/user.md`
-- `$USER_HOME/_agent/memory/context.md`
-- `$USER_HOME/_agent/memory/telos.md`
+- `_agent/agent.md`
+- `_agent/memory/user.md`
+- `_agent/memory/context.md`
+- `_agent/memory/telos.md`
+- `_agent/workspace/sample-project/`
 
-Keep `soul.md` mostly stable unless the identity/philosophy truly differs.
+## Important
+
+This repo already contains the actual starter files here:
+- `templates/org-starter-kit/scaffold/_agent/`
+- `templates/org-starter-kit/bootstrap-agent-os.sh`
+- `templates/org-starter-kit/bootstrap-agent-os.ps1`
 
 ## See also
 
-- `templates/ROOT-BOOTSTRAP.md`
+- `ROOT-BOOTSTRAP.md`
 - `templates/org-starter-kit/README.md`
-- `templates/memory/ROOT-SETUP.md`
+- `templates/org-starter-kit/PROJECT-WORKSPACE-STARTER-PACK.md`

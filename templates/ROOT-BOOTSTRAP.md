@@ -2,97 +2,107 @@
 
 ## Purpose
 
-Use this guide to stand up a fresh `_agent` root end-to-end.
+Use this guide to stand up a fresh `_agent` root **using the actual files stored in this repo**.
 
 Example targets:
-- `/home/ldp/_agent`
+- `./_agent`
 - `/home/test/_agent`
+- `C:\org\_agent`
 
 ## Minimum root structure
 
 ```text
-<user-home>/_agent/
+_agent/
   agent.md
   memory/
     soul.md
     user.md
     context.md
     telos.md
+  workspace/
+    INDEX.md
+    ACTIVE-CELLS.md
+    sample-project/
+      agent.md
+      context.md
+      notes.md
+      decisions.md
+      next-steps.md
+  knowledge/
+    README.md
+  taste/
+    README.md
+    principles.md
+    rejection-log.md
   templates/
     cell/
-    memory/
-  workspace/
-  taste/
-  knowledge/
+  review/
+  inbox/
+  archive/
+  ROADMAP.md
+  REVIEW.md
 ```
 
 ## KISS bootstrap flow
 
-### 1. Create the root folders
+### Option A — run the included bootstrap script
+
+#### macOS / Linux
 ```bash
-mkdir -p <user-home>/_agent/{memory,templates,workspace,taste,knowledge}
+bash templates/org-starter-kit/bootstrap-agent-os.sh ./_agent
 ```
 
-### 2. Copy the canonical root map
-```bash
-cp /home/ldp/_agent/agent.md <user-home>/_agent/agent.md
+#### Windows PowerShell
+```powershell
+powershell -ExecutionPolicy Bypass -File .\templates\org-starter-kit\bootstrap-agent-os.ps1 -Target .\_agent
 ```
 
-### 3. Copy the memory core from templates
+### Option B — copy the included scaffold directly
+
+#### macOS / Linux
 ```bash
-cp /home/ldp/_agent/templates/memory/soul.md <user-home>/_agent/memory/soul.md
-cp /home/ldp/_agent/templates/memory/user.md <user-home>/_agent/memory/user.md
-cp /home/ldp/_agent/templates/memory/context.md <user-home>/_agent/memory/context.md
-cp /home/ldp/_agent/templates/memory/telos.md <user-home>/_agent/memory/telos.md
+TARGET="./_agent"
+mkdir -p "$TARGET"
+cp -R templates/org-starter-kit/scaffold/_agent/. "$TARGET/"
 ```
 
-### 4. Copy the cell scaffold templates
-```bash
-mkdir -p <user-home>/_agent/templates/cell
-cp /home/ldp/_agent/templates/cell/agent.md <user-home>/_agent/templates/cell/agent.md
-cp /home/ldp/_agent/templates/cell/context.md <user-home>/_agent/templates/cell/context.md
-cp /home/ldp/_agent/templates/cell/notes.md <user-home>/_agent/templates/cell/notes.md
-cp /home/ldp/_agent/templates/cell/create-cell.sh <user-home>/_agent/templates/cell/create-cell.sh
-chmod +x <user-home>/_agent/templates/cell/create-cell.sh
+#### Windows PowerShell
+```powershell
+$Target = ".\_agent"
+New-Item -ItemType Directory -Force -Path $Target | Out-Null
+Copy-Item -Recurse -Force .\templates\org-starter-kit\scaffold\_agent\* $Target
 ```
 
-### 5. Adapt only the essential local details
+## Then adapt only the essential local details
+
 Update:
-- `memory/user.md`
-- `memory/context.md`
-- `memory/telos.md`
+- `_agent/agent.md`
+- `_agent/memory/user.md`
+- `_agent/memory/context.md`
+- `_agent/memory/telos.md`
+- `_agent/workspace/sample-project/`
 
-Keep `soul.md` mostly stable unless the identity/philosophy truly differs.
-
-### 6. Create the first cell when needed
-```bash
-<user-home>/_agent/templates/cell/create-cell.sh example-cell "the example workstream"
-```
+Replace `sample-project` with your real project or client workspace.
 
 ## Validation
 
 After setup, verify:
 - `agent.md` exists at root
 - memory core exists under `memory/`
-- cell scaffold exists under `templates/cell/`
-- new cells default to:
-  - `agent.md`
-  - `context.md`
-  - `notes.md`
-- normal cells do not get local `soul.md`, `user.md`, or `telos.md`
+- workspace index files exist
+- sample project workspace exists
+- GitHub remains the task source of truth
+- `_agent` is being used for memory and context
 
-## Promotion rule
+## Recommended next step
 
-When eval experiments produce a winning improvement:
-1. update the live active file
-2. update the matching template
-3. record the lesson in the eval system
-4. commit and push
+Open:
+- `templates/org-starter-kit/README.md`
+- `templates/org-starter-kit/ORG-AGENT-OS-SETUP.md`
+- `templates/org-starter-kit/PROJECT-WORKSPACE-STARTER-PACK.md`
+- `templates/org-starter-kit/GITHUB-ISSUES-AGENT-WORKFLOW.md`
 
-## See also
+## Final rule
 
-- `templates/ROOT-BOOTSTRAP-COMMANDS.md` — shortest copy-paste bootstrap block for another pi agent
-- `templates/org-starter-kit/README.md` — ready package for setting up new orgs and projects
-- `templates/memory/ROOT-SETUP.md`
-- `templates/memory/README.md`
-- `templates/cell/README.md`
+Do not depend on hidden local paths.
+This repo includes the actual scaffold and scripts needed to bootstrap a new org/project setup.
