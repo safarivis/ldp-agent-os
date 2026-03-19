@@ -49,10 +49,15 @@
 - [ ] Log important rejections in `taste/rejection-log.md`
 
 ### Weekly
+- [ ] Run `tests/weekly-check-and-log.sh` and review `review/weekly-checks/INDEX.md`
+- [ ] If needed, run `tests/weekly-check.sh` directly
+- [ ] If needed, run `tests/validate-canonical-layout.sh` directly for deeper debugging
 - [ ] Review drift and folder hygiene
+- [ ] Check whether current projects are moving toward the north star in `memory/telos.md`
 - [ ] Promote durable rules from `taste/` into doctrine/templates
 - [ ] Rename inconsistent files
 - [ ] Archive stale drafts
+- [ ] Check whether scaffold/template guidance still matches real usage
 
 ### Monthly
 - [ ] Review `telos.md`

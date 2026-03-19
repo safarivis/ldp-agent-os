@@ -21,6 +21,12 @@ NotebookLM should be used primarily as an **intake and synthesis layer**, not as
 5. Update operational files (`BLUEPRINT.md`, `PREFERRED-TOOLS.md`, memory files, work cells) only when needed
 6. Delete NotebookLM source material if it is no longer needed and the value has been captured locally
 
+## Pattern spotting loop
+Keep this lightweight:
+1. At the end of major tasks, ask: "Anything here we should standardize or reuse?" or "Any patterns?"
+2. Add likely reusable items to `knowledge/inbox/pattern-candidates.md`
+3. Promote only the clear winners into `workflows/`, `tools/`, or `templates/`
+
 ## Placement rules
 
 - `canonical/` — strongest distilled notes worth reusing often

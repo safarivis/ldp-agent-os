@@ -8,13 +8,13 @@
 
 ## Current state
 
-Dominic followed up after a prior conversation and shared several possible project opportunities. He asked for expectations around hourly rate / engagement model, while noting some work could also be project-based.
+Dominic followed up after a prior conversation and shared several possible project opportunities. Initial reply and follow-up drafts have now been prepared and sent/saved. The active focus has expanded to include Meshed360 support structuring, partner-network delivery, and CEO / leadership-support discussions tied to Sebastian and Barney.
 
 ## Current stage
 
 - warm opportunity
 - exploratory qualification
-- reply recommended
+- early structuring / advisory discussion active
 
 ## Key opportunities mentioned
 
@@ -38,13 +38,26 @@ Dominic followed up after a prior conversation and shared several possible proje
 - Potentially interested in a **JV-style working model** where Dominic handles corporate sales / door-opening and Louis builds and implements systems
 - Strong interest in building AI agent infrastructure for organizations and CEOs, including operating-system-like structures, workflow layers, and practical deployment capability
 
+## RevvTech north-star fit
+
+A key strategic fit for this relationship is building a repeatable delivery model where:
+- each client/project has its own repo as the project source of truth
+- `_agent` acts as the reusable operating layer across projects
+- pi/agents help with execution, structure, and pattern capture
+- repeatable lessons get promoted into reusable standards, workflows, and templates
+
+The aim is not just to deliver one-off projects, but to help RevvTech and Louis compound learnings, improve handover, and speed up future project setup across multiple clients.
+
+Canonical vision note:
+- `/home/ldp/_agent/knowledge/canonical/revvtech-agent-delivery-vision__note__active__v1.md`
+
 ## Immediate next actions
 
-1. Decide how directly to express interest in all opportunities
-2. Decide how to frame rate / engagement model without underpricing
-3. Consider proposing a broader partner/JV framing with Dominic
-4. Draft reply
-5. Ask Dominic what his highest priority is right now
+1. Discuss with Dominic whether RevvTech should own the Meshed360 relationship directly
+2. Confirm whether Phiresky should be positioned as subcontracted delivery under RevvTech
+3. Clarify what written proposal should be prepared for Sebastian and Barney
+4. Clarify the scope of CEO / leadership-support consulting and whether CEO search support is included
+5. Continue maintaining `daily-notes.md` as the running operational log for this cell
 
 ## Open questions
 

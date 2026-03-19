@@ -14,6 +14,7 @@
   - implementation
 - Ask Dominic what his **highest priority** is right now
 - Consider introducing a broader partner/JV framing where Dominic leads corporate sales / door-opening and Louis leads build/implementation
+- Treat the repo-plus-`_agent` operating model as a strategic differentiator for multi-project delivery, not just a local implementation detail
 
 ## Pending decisions
 
