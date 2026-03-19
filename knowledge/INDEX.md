@@ -13,6 +13,12 @@ Use for tool evaluations, preferred stack comparisons, and technical tradeoff no
 ### `workflows/`
 Use for repeatable methods and operating workflows.
 
+Current workflow notes include:
+- `meta-model-thinking__workflow__approved__v1.md`
+- `thinking-review-checklist__workflow__approved__v1.md`
+- `github-backup__workflow__approved__v1.md`
+- `north-star-alignment__workflow__active__v1.md`
+
 ### `inbox/`
 Use for processed-but-not-yet-placed ideas.
 

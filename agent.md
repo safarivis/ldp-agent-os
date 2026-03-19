@@ -133,6 +133,9 @@ Validation:
 15. If a correction reveals a reusable standard, encode it in `taste/`.
 16. Promote to principles only after repeated validation or clearly general evidence; otherwise keep the lesson at the live, template, or workflow level.
 17. If a rule becomes durable, promote it into `memory/`, room context, or templates.
+18. At the end of meaningful tasks or work chunks, ask: "Anything here we should standardize or reuse?" or "Any patterns?"
+19. When a reusable candidate is spotted, add a short note to `knowledge/inbox/pattern-candidates.md` and suggest promotion only if it looks useful beyond one project.
+20. Use `knowledge/workflows/north-star-alignment__workflow__active__v1.md` as the lightweight reminder for keeping project work and system improvements aligned to `memory/telos.md`.
 
 ## Contact placement rule
 
