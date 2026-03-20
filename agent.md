@@ -86,12 +86,20 @@ For a normal new cell under `workspace/<cell-name>/`, start with:
 - `context.md`
 - `notes.md`
 
-Add only what the work actually needs, for example:
-- `contacts.md`
-- `decisions.md`
+For active client or opportunity work, usually add:
+- `daily-notes.md`
 - `next-steps.md`
+- `decisions.md`
+- `contacts.md`
+- `email-log.md`
+
+Add only what the work actually needs beyond that, for example:
 - `reply-drafts.md`
 - `opportunities.md`
+- `project-notes.md`
+
+Reference:
+- `templates/cell/CLIENT-CELL-STANDARD.md`
 
 KISS rule:
 - do **not** create cell-local `soul.md`, `user.md`, or `telos.md` by default

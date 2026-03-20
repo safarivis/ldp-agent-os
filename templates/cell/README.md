@@ -11,12 +11,33 @@ Minimum starting files:
 - `context.md`
 - `notes.md`
 
-Add other files only as needed, for example:
-- `contacts.md`
-- `decisions.md`
+Standard optional files in this template folder:
+- `daily-notes.md`
 - `next-steps.md`
+- `decisions.md`
+- `contacts.md`
+- `email-log.md`
+
+Add other files only as needed, for example:
 - `reply-drafts.md`
 - `opportunities.md`
+- `project-notes.md`
+
+## Recommended quick setup
+
+### For a normal new cell
+Start with:
+- `agent.md`
+- `context.md`
+- `notes.md`
+
+### For an active client or opportunity
+Usually add:
+- `daily-notes.md`
+- `next-steps.md`
+- `decisions.md`
+- `contacts.md`
+- `email-log.md` *(if communication volume matters)*
 
 Do not create local `soul.md`, `user.md`, or `telos.md` by default.
 Those belong to the global memory core unless the cell becomes a broader strategic domain.
